@@ -6,23 +6,6 @@ header * {
     display: block;
     float: left;
     margin: 25px 15px;
-    font-size: 25px;
-    text-decoration: none;
-    text-transform: lowercase;
-    transition: all .3s;
-}
-
-.navbar .navbar-brand a strong {
-    line-height: 1;
-    font-size: 30px;
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: all .3s;
-}
-
-.navbar .navbar-brand a:hover,
-.navbar .navbar-brand a:hover strong {
-    color: rgb(226, 83, 75);
 }
 
 .navbar ul {
@@ -42,7 +25,6 @@ header * {
     padding: 9px 13px 8px 13px;
     font-size: 13px;
     font-weight: 600;
-    text-decoration: none;
     text-transform: uppercase;
     transition: all .3s;
 }
@@ -59,12 +41,22 @@ header * {
     background-color: rgb(232, 100, 90);
     border-radius: 3px;
     box-shadow: 0 3px 0 rgb(226, 83, 75);
+    text-decoration: none;
 }
 
-.navbar li button.search {
+.navbar li .search {
     background: none;
     line-height: 1;
     margin: 25px 15px;
     padding: 7px 0 7px 13px;
     font-size: 16px;
+
+}
+
+.navbar li .search:hover {
+    transition: all .3s;
+}
+
+.navbar li .search:hover i {
+    color: rgb(226, 83, 75);
 }
