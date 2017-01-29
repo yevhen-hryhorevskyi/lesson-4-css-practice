@@ -1,0 +1,36 @@
+footer * {
+    color: rgb(255, 255, 255);
+}
+
+.copyright {
+    float: left;
+    line-height: 1;
+    margin: 19px 15px;
+    font-size: 12px;
+}
+
+.social-networks {
+    display: block;
+    float: right;
+}
+
+.social-networks li {
+    display: block;
+    float: left;
+}
+
+.social-networks li a {
+    display: block;
+    line-height: 1;
+    margin: 14px 15px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.social-networks li a i {
+    transition: all .3s;
+}
+
+.social-networks li a:hover i {
+    color: rgb(226, 83, 75);
+}
