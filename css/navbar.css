@@ -2,21 +2,21 @@
     color: rgb(255, 255, 255);
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand a {
     display: block;
     float: left;
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand a {
     display: block;
     line-height: 30px;
-    margin: 25px 10px;
+    margin: 25px 15px;
     font-size: 25px;
     text-decoration: none;
     text-transform: lowercase;
 }
 
-.navbar .navbar-brand strong {
+.navbar .navbar-brand a strong {
     line-height: 30px;
     font-size: 30px;
     font-weight: 800;
@@ -36,7 +36,7 @@
 .navbar li a {
     display: block;
     line-height: 14px;
-    margin: 25px 10px 25px 18px;
+    margin: 25px 15px;
     padding: 8px 13px;
     font-size: 13px;
     font-weight: 600;
@@ -60,7 +60,7 @@
 .navbar li button.search {
     background: none;
     line-height: 16px;
-    margin: 25px 10px 25px 18px;
+    margin: 25px 15px;
     padding: 7px 0 7px 13px;
     font-size: 16px;
 }

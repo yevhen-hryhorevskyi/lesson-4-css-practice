@@ -1,0 +1,10 @@
+.company-services .lead {
+    margin: 0 15px 50px 15px;
+}
+
+.service {
+    position: relative;
+    width: 270px;
+    margin: 0 15px;
+    text-align: center;
+}
