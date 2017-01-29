@@ -1,0 +1,44 @@
+.navbar .navbar-brand {
+    display: block;
+    float: left;
+}
+
+.navbar .navbar-brand {
+    display: block;
+    line-height: 30px;
+    margin: 25px 10px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.navbar .navbar-brand strong {
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    display: block;
+    float: right;
+}
+
+.navbar li {
+    display: block;
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    line-height: 13px;
+    margin: 25px 10px 25px 18px;
+    padding: 8px 13px 9px 13px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
