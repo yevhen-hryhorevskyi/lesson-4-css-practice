@@ -1,6 +1,6 @@
 .statistics-overview {
     position: relative;
-    width: 140px; /* 120px width + min margins from left & right = 10px */
+    width: 144px; /* 120px width + min margins from left & right = 12px */
 
     /*
         If you want to make some effect of adaptive components,
@@ -16,8 +16,10 @@
     left: 50%;
     /* Must be the same as progress-bar height. In such case we have number straight below the arc*/
     top: 60px;
-    font-size: 28px;
-    color: #848484;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    color: rgb(127, 140, 140);
     /*
         As we have a value which starts straight above the arc's center,
         then we need to:
@@ -31,8 +33,9 @@
     width: 100%;
     margin-top: 25px;
     text-align: center;
-    font-size: 18px;
-    color: #848484;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(127, 140, 140);
 }
 
 .statistics-overview_progress-bar {
@@ -59,7 +62,7 @@
     width: inherit;
 
     border-radius: 60px 60px 0 0;
-    border: 20px solid red;
+    border: 20px solid rgb(226, 83, 75);
     box-sizing: border-box;
     border-bottom: 0;
 }
@@ -70,7 +73,7 @@
     width: inherit;
 
     border-radius: 60px 60px 0 0;
-    border: 20px solid grey;
+    border: 20px solid rgb(118, 199, 192);
     box-sizing: border-box;
     border-bottom: 0;
 
