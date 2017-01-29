@@ -55,6 +55,7 @@ header * {
 
 .navbar li a:hover,
 .navbar li.active a:hover {
+    color: rgb(255, 255, 255);
     background-color: rgb(232, 100, 90);
     border-radius: 3px;
     box-shadow: 0 3px 0 rgb(226, 83, 75);

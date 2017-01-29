@@ -1,0 +1,9 @@
+* {
+    font-family: 'Open Sans', sans-serif;;
+    color: rgb(119, 119, 119);
+}
+
+a:hover {
+    color: rgb(226, 83, 75);
+    text-decoration: underline;
+}

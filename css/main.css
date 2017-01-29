@@ -20,11 +20,6 @@
     clear: both;
 }
 
-* {
-    font-family: 'Open Sans', sans-serif;;
-    color: rgb(119, 119, 119);
-}
-
 body {
     padding-top: 80px;
     background-color: rgb(243, 243, 243);
