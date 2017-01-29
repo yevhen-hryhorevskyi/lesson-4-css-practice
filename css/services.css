@@ -40,6 +40,21 @@
     transition: all .3s;
 }
 
+.service:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.service i {
+    line-height: 1;
+    font-size: 60px;
+    margin-bottom: 18px;
+    color: rgb(98, 189, 189);
+}
+
+.service:hover i {
+    color: rgb(226, 83, 75);
+}
+
 .service h3 {
     font-size: 16px;
     font-weight: 800;
@@ -50,10 +65,6 @@
 
 .service p {
     line-height: 1.6;
-}
-
-.service:hover {
-    background-color: rgb(255, 255, 255);
 }
 
 .service .btn {
