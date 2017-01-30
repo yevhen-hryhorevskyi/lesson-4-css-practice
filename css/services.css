@@ -32,7 +32,32 @@
     padding: 15px 0;
     background-color: rgb(232, 100, 90);
     box-shadow: 0 4px 0 rgb(226, 83, 75);
-    text-decoration: none;
+}
+
+.services .services-lead .btn span {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.services .services-lead .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.services .services-lead .btn:hover span {
+    padding-right: 25px;
+}
+
+.services .services-lead .btn:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .service {
