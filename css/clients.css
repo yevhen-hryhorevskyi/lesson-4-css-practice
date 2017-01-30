@@ -1,0 +1,11 @@
+.client {
+    flex: 1;
+    max-width: 170px;
+    margin: 0 15px 25px;
+}
+
+.client img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
