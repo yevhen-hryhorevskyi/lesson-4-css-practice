@@ -18,6 +18,10 @@ header * {
     float: left;
 }
 
+.navbar li:before {
+    content: none;
+}
+
 .navbar li a {
     display: block;
     line-height: 1;
@@ -26,6 +30,7 @@ header * {
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
     transition: all .3s;
 }
 
@@ -41,7 +46,6 @@ header * {
     background-color: rgb(232, 100, 90);
     border-radius: 3px;
     box-shadow: 0 3px 0 rgb(226, 83, 75);
-    text-decoration: none;
 }
 
 .navbar li .search {

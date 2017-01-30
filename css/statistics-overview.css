@@ -1,6 +1,12 @@
-.statistics-overview {
+.company-year-statistics-overview > p {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.statistics-overview-item {
     position: relative;
     width: 144px; /* 120px width + min margins from left & right = 12px */
+    margin-bottom: 30px;
 
     /*
         If you want to make some effect of adaptive components,

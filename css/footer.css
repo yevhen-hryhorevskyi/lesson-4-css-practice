@@ -1,4 +1,5 @@
-footer * {
+.footer_navigation *,
+.footer_social-networks * {
     color: rgb(255, 255, 255);
 }
 
@@ -6,6 +7,7 @@ footer * {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -26,15 +28,10 @@ footer * {
 
 .footer_navigation-text p {
     line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.footer_navigation-text p:last-child {
-    margin-bottom: 0;
 }
 
 .footer_navigation-text address p {
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .footer_navigation-text .address-label {
@@ -67,7 +64,10 @@ footer * {
 }
 
 .footer_navigation-nav li:before {
-    content: '>';
+    font-family: 'FontAwesome';
+    content: '\f105';
+    font-size: 14px;
+    color: rgb(255, 255, 255);
     padding-right: 10px;
 }
 
@@ -95,19 +95,17 @@ footer * {
     position: relative;
     padding-left: 90px;
     margin-bottom: 20px;
+    text-decoration: none;
+    min-height: 70px;
 }
 
 .footer_navigation-blog a:last-child {
     margin-bottom: 0;
 }
 
-.footer_navigation-blog a:hover {
-    text-decoration: none;
-}
-
 .footer_navigation-blog a p {
     line-height: 1.5;
-    margin-bottom: 0;
+    padding-bottom: 0;
     transition: all .3s;
 }
 
@@ -160,4 +158,8 @@ footer * {
 
 .social-networks li a:hover i {
     color: rgb(226, 83, 75);
+}
+
+.social-networks li:before {
+    content: none;
 }
