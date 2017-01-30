@@ -13,12 +13,7 @@
 }
 
 .footer_navigation-text {
-    width: 370px;
-    margin: 0 15px;
-}
-
-.footer_navigation-nav {
-    width: 170px;
+    flex: 2;
     margin: 0 15px;
 }
 
@@ -45,6 +40,11 @@
     font-weight: 600;
     font-style: italic;
     text-decoration: none;
+}
+
+.footer_navigation-nav {
+    flex: 1;
+    margin: 0 15px;
 }
 
 .footer_navigation-nav h4 {

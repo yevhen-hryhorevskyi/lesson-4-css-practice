@@ -1,3 +1,28 @@
+aside {
+    flex: 1;
+    margin: 0 15px 60px;
+}
+
+.navbar-brand a {
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: all .3s;
+}
+
+.navbar-brand a strong {
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:hover strong {
+    color: rgb(226, 83, 75);
+}
+
 .btn {
     width: 200px;
     height: 50px;
@@ -19,24 +44,4 @@
     background-color: rgb(232, 100, 90);
     box-shadow: 0 4px 0 rgb(226, 83, 75);
     text-decoration: none;
-}
-
-.navbar-brand a {
-    font-size: 25px;
-    text-decoration: none;
-    text-transform: lowercase;
-    transition: all .3s;
-}
-
-.navbar-brand a strong {
-    line-height: 1;
-    font-size: 30px;
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: all .3s;
-}
-
-.navbar-brand a:hover,
-.navbar-brand a:hover strong {
-    color: rgb(226, 83, 75);
 }
