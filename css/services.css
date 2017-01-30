@@ -6,18 +6,28 @@
 .services .services-lead {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 15px 50px;
-    padding: 25px 300px 25px 30px;
+    padding: 25px 15px;
     background-color: rgb(236, 236, 236);
     border-radius: 3px;
+}
+
+.services .services-lead main {
+    width: 840px;
+    margin: 0 15px;
+}
+
+.services .services-lead aside {
+    width: 200px;
+    margin: 0 15px;
 }
 
 .services .services-lead .btn {
     font-size: 20px;
     text-transform: uppercase;
-    position: absolute;
-    top: 25px;
-    right: 30px;
     padding: 15px 0;
     background-color: rgb(232, 100, 90);
     box-shadow: 0 4px 0 rgb(226, 83, 75);
