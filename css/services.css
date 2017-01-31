@@ -29,7 +29,7 @@
 .services .services-lead .btn {
     font-size: 20px;
     text-transform: uppercase;
-    padding: 15px 0;
+    padding: 17px 0 13px;
     background-color: rgb(232, 100, 90);
     box-shadow: 0 4px 0 rgb(226, 83, 75);
 }
@@ -37,6 +37,7 @@
 .services .services-lead .btn span {
     display: inline-block;
     position: relative;
+    line-height: 1;
     font-size: 20px;
     color: rgb(255, 255, 255);
     transition: 0.3s;
