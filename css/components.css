@@ -63,3 +63,7 @@ aside {
     background-color: rgb(232, 100, 90);
     box-shadow: 0 4px 0 rgb(226, 83, 75);
 }
+
+.btn:focus {
+    outline: 0;
+}

@@ -48,7 +48,7 @@ header * {
     box-shadow: 0 3px 0 rgb(226, 83, 75);
 }
 
-.navbar li .search {
+.navbar .search {
     background: none;
     line-height: 1;
     margin: 25px 15px;
@@ -57,10 +57,14 @@ header * {
 
 }
 
-.navbar li .search:hover {
+.navbar .search:hover {
     transition: all .3s;
 }
 
-.navbar li .search:hover i {
+.navbar .search:hover i {
     color: rgb(226, 83, 75);
+}
+
+.navbar .search:focus {
+    outline: 0;
 }
