@@ -29,7 +29,7 @@
     top: 60px;
     font-size: 30px;
     font-weight: 800;
-    line-height: 30px;
+    line-height: 1;
     color: rgb(127, 140, 140);
     /*
         As we have a value which starts straight above the arc's center,
@@ -45,6 +45,7 @@
     margin-top: 25px;
     text-align: center;
     font-size: 16px;
+    line-height: 1;
     font-weight: 800;
     color: rgb(127, 140, 140);
     text-transform: uppercase;
