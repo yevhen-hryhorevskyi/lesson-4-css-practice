@@ -69,7 +69,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    width: 576px; /* 552px width from mockup + 12px min margin for first & last child inside*/
+    max-width: 576px; /* 552px width from mockup + 12px min margin for first & last child inside*/
     margin: 0 12px 30px;
 }
 
