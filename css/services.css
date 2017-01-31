@@ -40,7 +40,11 @@
     line-height: 1;
     font-size: 20px;
     color: rgb(255, 255, 255);
-    transition: 0.3s;
+    transition: padding-right .3s;
+}
+
+.services .services-lead .btn:hover span {
+    padding-right: 25px;
 }
 
 .services .services-lead .btn span:after {
@@ -49,11 +53,7 @@
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.3s;
-}
-
-.services .services-lead .btn:hover span {
-    padding-right: 25px;
+    transition: opacity .3s, right .3s;
 }
 
 .services .services-lead .btn:hover span:after {
@@ -71,7 +71,7 @@
     background-color: rgb(248, 248, 248);
     border-radius: 3px;
     box-shadow: 0 4px 0 rgb(229, 230, 230);
-    transition: all .3s;
+    transition: background-color .3s;
 }
 
 .service:hover {
@@ -83,6 +83,7 @@
     font-size: 60px;
     margin-bottom: 18px;
     color: rgb(98, 189, 189);
+    transition: color .3s;
 }
 
 .service:hover i {

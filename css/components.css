@@ -26,7 +26,7 @@ aside {
     font-size: 25px;
     text-decoration: none;
     text-transform: lowercase;
-    transition: all .3s;
+    transition: color .3s;
 }
 
 .navbar-brand a strong {
@@ -34,7 +34,7 @@ aside {
     font-size: 30px;
     font-weight: 800;
     text-transform: uppercase;
-    transition: all .3s;
+    transition: color .3s;
 }
 
 .navbar-brand a:hover,
@@ -56,7 +56,7 @@ aside {
     background: rgb(118, 202, 202);
     border-radius: 3px;
     box-shadow: 0 4px 0 rgb(98, 189, 189);
-    transition: all .3s;
+    transition: background-color .3s, box-shadow .3s;
 }
 
 .btn:hover {

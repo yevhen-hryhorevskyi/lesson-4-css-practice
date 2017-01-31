@@ -106,7 +106,6 @@
 .footer_navigation-blog a p {
     line-height: 1.5;
     padding-bottom: 0;
-    transition: all .3s;
 }
 
 .footer_navigation-blog a:hover p {
@@ -150,10 +149,6 @@
     margin: 14px 15px;
     font-size: 22px;
     text-decoration: none;
-}
-
-.social-networks li a i {
-    transition: all .3s;
 }
 
 .social-networks li a:hover i {

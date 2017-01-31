@@ -31,7 +31,7 @@ header * {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .3s;
+    transition: color .3s, background-color .3s, box-shadow .3s;
 }
 
 .navbar li.active a {
@@ -54,17 +54,16 @@ header * {
     margin: 25px 15px;
     padding: 7px 0 7px 13px;
     font-size: 16px;
-
 }
 
-.navbar .search:hover {
-    transition: all .3s;
-}
-
-.navbar .search:hover i {
-    color: rgb(226, 83, 75);
+.navbar .search i {
+    transition: color .3s;
 }
 
 .navbar .search:focus {
     outline: 0;
+}
+
+.navbar .search:hover i {
+    color: rgb(226, 83, 75);
 }
