@@ -10,6 +10,7 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
+
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -20,27 +21,103 @@
     clear: both;
 }
 
+* {
+	font-family: "Open Sans", sans-serif;
+	
+}
+
 body {
-    height: 1000px;
+	height: 1000px;
 }
 
 header {
-    position: fixed;
-    top: 0;
+    /*position: fixed;*/
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
     left: 0;
     right: 0;
-    height: 60px;
-    background-color: rgba(99, 193, 184, 0.5);
-    -webkit-transform: translateZ(0);
-    z-index: 999;
+    min-height: 80px;
+	background-color: #76c7c0;
+	/* background-image: url(/lesson-4-css-practice/img/line.png);
+	webkit-transform: translateZ(0);
+    z-index: 999;*/
 }
 
-.header-fix {
+/*.header-fix {
     position: relative;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 80px;
     background-color: rgb(99, 193, 184);
+}*/
+
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: flex-end;
+    width: 100%;
+	max-width: 1170px;
+    margin: 0 auto;
+	padding: 0px 9px;
+	font-family: "Open Sans";
+	color: white;
+}
+
+.top-bar-logo {
+	font-size: 20px;
+	color: white;
+	font-weight: 400;
+	text-transform: lowercase;
+	float: left;
+}
+
+.top-bar-logo span {
+	font: 150% Open Sans;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+.top-bar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: flex-end;
+    width: 100%;
+	max-width: 780px;
+    margin-bottom: -3px;
+	text-transform: uppercase;
+	font: 90% Open Sans Bold;
+	color: white;
+		
+}
+		
+
+
+.top-bar-menu div {
+	padding: 8px 14px;
+}
+
+.top-bar-menu div:hover{
+	background: #62a29e;
+	border-radius: 7% 7%;
+	box-shadow: 0 3px 0 #528b86;
+	font-size: 95%;
+}
+
+.line {
+	position: relative;
+	max-width: 1600px;
+	width: 100%;
+	height: 9px;
+	background-image: url(/lesson-4-css-practice/img/line.png);
+	background-repeat: repeat-x;
+	bottom: 0;
 }
 
 .content {
@@ -84,7 +161,7 @@ footer {
 
 .footer_navigation {
     padding: 35px 0;
-    background-color: rgb(99, 193, 184);
+    background-color: #76c7c0;
 }
 
 .footer_social-networks {
