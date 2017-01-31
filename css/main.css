@@ -76,10 +76,8 @@ header {
 }
 
 .top-bar-logo span {
-	font: 150% Open Sans;
-	font-size: 30px;
-	font-weight: 900;
 	text-transform: uppercase;
+	font: normal 800 30px/1.2 Open Sans Bold, Sans-Serif;
 	color: inherit;
 }
 
@@ -92,12 +90,9 @@ header {
 	max-width: 780px;
     margin-bottom: -3px;
 	text-transform: uppercase;
-	font: 90% Open Sans Bold;
+	font: normal 600 90% Open Sans Bold, Sans-Serif;
 	color: white;
-		
 }
-		
-
 
 .top-bar-menu div {
 	padding: 8px 14px;
@@ -105,7 +100,7 @@ header {
 
 .top-bar-menu div:hover{
 	background: #62a29e;
-	border-radius: 7% 7%;
+	border-radius: 10%;
 	box-shadow: 0 3px 0 #528b86;
 	font-size: 95%;
 }
@@ -121,8 +116,88 @@ header {
 }
 
 .content {
-    height: 1000px;
+    height: 2000px;
 }
+
+.slider {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color:white;
+	background-image: url(/lesson-4-css-practice/img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.slider-content {
+	height: 500px;
+	
+}
+
+.slider-left-scroll {
+	width: 50px;
+	height: 57px;
+	background: #e8645a;
+	box-shadow: 0 3px 0 #e2534b;
+	border-radius: 0% 7% 7% 0%;
+	margin-top: 220px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.slider-right-scroll {
+	width: 50px;
+	height: 57px;
+	background: #e8645a;
+	box-shadow: 0 3px 0 #e2534b;
+	border-radius: 7% 0% 0% 7%;
+	margin-top: 220px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.slider-content {
+	width: 100%;
+	max-width: 470px;
+}
+
+.slider-content-block-a {
+	max-width: 340px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 160px;
+	font: normal 900 43px/1.2 Open Sans Bold, Sans-Serif;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	background: #e2534b;
+	border-radius: 5px;
+
+	
+}
+
+.slider-content-block-b {
+	width: 100%;
+	max-width: 470px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 12px;
+	background: rgb(63, 70, 70);
+	opacity: 0.7;
+	border-radius: 5px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Adaptive layouting with flexbox*/
 .company-year-statistics-overview {
