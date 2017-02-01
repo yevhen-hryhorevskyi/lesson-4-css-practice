@@ -63,7 +63,7 @@ header {
     margin: 0 auto;
 }
 
-/* Adaptive layouting with flexbox*/
+/* Adaptive layouting with flexbox */
 .company-year-statistics-overview {
     display: flex;
     flex-wrap: wrap;
