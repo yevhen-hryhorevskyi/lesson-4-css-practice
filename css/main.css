@@ -10,7 +10,6 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -22,16 +21,15 @@
 }
 
 * {
-	font-family: "Open Sans", sans-serif;
-	
+	font: normal 400 14px/1.2 Open Sans, Sans-Serif;
 }
 
-body {
-	height: 5000px;
+h3 {
+	font: normal 700 18px Open Sans Bold, Sans-Serif;
 }
 
 /*
-!!!------------------------------------HEADER-START------------------------------------!!!
+!!!------------------------------------HEADER------------------------------------!!!
 */
 
 header {
@@ -45,18 +43,7 @@ header {
     right: 0;
     min-height: 80px;
 	background-color: #76c7c0;
-	/* background-image: url(/lesson-4-css-practice/img/line.png);
-	webkit-transform: translateZ(0);
-    z-index: 999;*/
 }
-
-/*.header-fix {
-    position: relative;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background-color: rgb(99, 193, 184);
-}*/
 
 .top-bar {
     display: flex;
@@ -67,7 +54,6 @@ header {
 	max-width: 1170px;
     margin: 0 auto;
 	padding: 0px 9px;
-	font-family: "Open Sans";
 	color: white;
 }
 
@@ -95,7 +81,6 @@ header {
 	max-width: 780px;
     margin: 8px 14px;
 	text-transform: uppercase;
-	font: normal 600 90% Open Sans Bold, Sans-Serif;
 	color: white;
 }
 
@@ -107,7 +92,7 @@ header {
 	background: #62a29e;
 	border-radius: 10%;
 	box-shadow: 0 3px 0 #528b86;
-	font-size: 95%;
+	font-size: 20px;
 }
 
 .line {
@@ -121,15 +106,11 @@ header {
 }
 
 /*
-!!!------------------------------------HEADER-END------------------------------------!!!
-*/
-
-/*
-!!!------------------------------------CONTENT-START------------------------------------!!!
+!!!------------------------------------CONTENT------------------------------------!!!
 */
 
 .content {
-    height: 2000px;
+    /* height: 5000px; */
 	background: #f3f3f3;
 }
 
@@ -148,36 +129,20 @@ header {
 }
 
 .slider-content {
-	height: 500px;
-	margin: 0 auto;
-	
-}
-
-.slider-left-scroll {
-	width: 50px;
-	height: 57px;
-	background: #e8645a;
-	box-shadow: 0 3px 0 #e2534b;
-	border-radius: 0% 7% 7% 0%;
-	margin-top: 220px;
-	font-size: 40px;
-	text-align: center;
-}
-
-.slider-right-scroll {
-	width: 50px;
-	height: 57px;
-	background: #e8645a;
-	box-shadow: 0 3px 0 #e2534b;
-	border-radius: 7% 0% 0% 7%;
-	margin-top: 220px;
-	font-size: 40px;
-	text-align: center;
-}
-
-.slider-content {
 	width: 100%;
 	max-width: 470px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.slider-scroll {
+	width: 50px;
+	height: 57px;
+	background: #e8645a;
+	box-shadow: 0 3px 0 #e2534b;
+	margin-top: 220px;
+	font-size: 45px;
+	text-align: center;
 }
 
 .slider-content-block-a {
@@ -185,7 +150,7 @@ header {
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 160px;
-	font: normal 900 43px/1.2 Open Sans Bold, Sans-Serif;
+	font: normal 900 45px/1.2 Open Sans Bold, Sans-Serif;
 	text-transform: uppercase;
 	padding: 0px 5px;
 	background: #e2534b;
@@ -241,16 +206,15 @@ header {
 	color: #7f8c8c;
 }
 
-.top-services-content h2 {
+.top-services-content h3 {
 	max-width: 620px;
 	margin: 10px 35px;
-	font: normal 400 25px/1.2 Open Sans Semibold, Sans-Serif;
 }
 
 .top-services-content p {
 	max-width: 620px;
 	margin: 10px 35px;
-	font: normal 400 14px/1.2 Open Sans, Sans-Serif;
+	/* font: normal 400 14px/1.2 Open Sans, Sans-Serif; */
 }
 
 .red-button {
@@ -309,12 +273,11 @@ header {
 }
 
 .competences-descr-header {
-	font: normal 700 22px/1.2 Open Sans Bold, Sans-Serif;
 	color: #7f8c8c;
+	text-transform: uppercase;
 }
 
 .competences-descr-text {
-	font: normal 400 14px/1.2 Open Sans, Sans-Serif;
 	color: #7f8c8c;
 	padding: 20px;
 }
@@ -324,16 +287,15 @@ header {
 */
 
 .about {
-	position: relative;
-	height: 400px;
 	background: #ececec;
-	
+	height: 400px;
+	width: 100%;
 }
 
 .about-line {
 	height: 17px;
 	background-image: url(/lesson-4-css-practice/img/line-2.png);
-	
+	margin-top: -400px;
 }
 
 .about-header {
@@ -342,21 +304,17 @@ header {
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 45px;
-	
 }
 	
 .about-text {
-	font: normal 400 14px/1.2 Open Sans, Sans-Serif;
 	color: #7f8c8c;
 	text-align: center;
-	
 }
 
 .about-image-box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	position: relative;
 	max-width: 1170px;
 	margin: 0 auto;
 	margin-top: 90px;
@@ -369,11 +327,6 @@ header {
 	background: #c1c7c8;
 	border-radius: 5px;
 	margin-top: 50px;
-
-}
-
-.about-back-container-2 {
-
 }
 
 .about-top-container {
@@ -395,7 +348,6 @@ header {
 	color: #ececec;
 	letter-spacing: 5px;
 	margin: 14px;
-
 }
 
 .about-back-container:after,
@@ -432,56 +384,78 @@ header {
 	background-image: url(/lesson-4-css-practice/img/time.jpg);
 }
 
+/*
+!!!------------------------------------CLIENTS------------------------------------!!!
+*/
 
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
 
+.clients-reviews {
+	color: #7f8c8c;
+	width: 270px;
+}
 
+.clients-reviews ul > li {
+	display: inline-block;
+	padding: 5px 0px;
+}
 
+.clients-reviews ul > li:before {
+	content: "\f061";
+	font-family: "FontAwesome";
+	color: #e1524b;
+	padding-right: 7px;
+}
 
+.clients-statistics-overview-text a {
+	text-decoration: underline;
+	color: #e1524b;
+}
 
+.clients-reviews-quote {
+	position: relative;
+	font: 90% Open Sans Light Italic;
+	font-size: 14px;
+	background: #f8f8f8;
+	padding: 16px;
+}
 
+.clients-reviews-quote:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0; 
+	margin-left: -170px;
+	margin-top: 30px;
+	border: 20px solid transparent;
+	border-top: 20px solid #f8f8f8;
+	border-right: 20px solid #f8f8f8;
+}
 
+.clients-statistics-overview-text {
+	max-width: 560px;
+	color: #7f8c8c;
+	padding: 25px 0px;
+}
 
-
-
-
-
-
-
-
-
-/* Adaptive layouting with flexbox*/
 .company-year-statistics-overview {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     max-width: 580px; /* 560px width from mockup + 10px min margin for first & last child inside*/
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
-/* Adaptive layouting with blocks*/
-/*.company-year-statistics-overview {*/
-    /*width: 100%;*/
-    /*max-width: 580px;*/
-    /*margin: 40px auto;*/
-/*}*/
-
-/*.company-year-statistics-overview:before,*/
-/*.company-year-statistics-overview:after {*/
-    /*content: " ";*/
-    /*display: table;*/
-/*}*/
-
-/*.company-year-statistics-overview:after {*/
-    /*clear: both;*/
-/*}*/
-
-/*.company-year-statistics-overview > .statistics-overview {*/
-    /*float: left;*/
-/*}*/
-
 /*
-!!!------------------------------------FOOTER-START------------------------------------!!!
+!!!------------------------------------FOOTER------------------------------------!!!
 */
 
 footer {
@@ -522,6 +496,15 @@ footer {
 		align-items: center;
 	}
 	
+	.clients {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.clients-statistics-overview-text {
+		text-align: center;
+	}
+	
 	.about-top-container {
 		margin: -5% 0%;
 	}
@@ -532,6 +515,12 @@ footer {
 	.about-back-container {
 		margin-top: 0px;
 	}
+	.diagrams {
+		order: 1;
+	}
+	.clients-reviews {
+		order: 2;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -539,7 +528,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 	}
-	.slider-left-scroll, .slider-right-scroll {
+	.slider-scroll {
 		display: none;
 	}
 }

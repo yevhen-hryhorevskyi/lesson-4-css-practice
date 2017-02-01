@@ -30,6 +30,7 @@
 .statistics-overview_progress-label {
     width: 100%;
     margin-top: 25px;
+	text-transform: uppercase;
     text-align: center;
     font-size: 18px;
     color: #848484;
