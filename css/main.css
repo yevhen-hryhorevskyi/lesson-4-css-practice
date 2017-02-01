@@ -27,7 +27,7 @@
 }
 
 body {
-	height: 1000px;
+	height: 5000px;
 }
 
 /*
@@ -35,7 +35,7 @@ body {
 */
 
 header {
-    /*position: fixed;*/
+    position: relative;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -77,6 +77,7 @@ header {
 	font-weight: 400;
 	text-transform: lowercase;
 	float: left;
+	margin: 1% 1%;
 }
 
 .top-bar-logo span {
@@ -92,7 +93,7 @@ header {
 	align-items: flex-end;
     width: 100%;
 	max-width: 780px;
-    margin-bottom: -3px;
+    margin: 8px 14px;
 	text-transform: uppercase;
 	font: normal 600 90% Open Sans Bold, Sans-Serif;
 	color: white;
@@ -110,7 +111,7 @@ header {
 }
 
 .line {
-	position: relative;
+	position: absolute;
 	max-width: 1600px;
 	width: 100%;
 	height: 9px;
@@ -241,13 +242,13 @@ header {
 }
 
 .top-services-content h2 {
-	max-width: 830px;
+	max-width: 620px;
 	margin: 10px 35px;
 	font: normal 400 25px/1.2 Open Sans Semibold, Sans-Serif;
 }
 
 .top-services-content p {
-	max-width: 830px;
+	max-width: 620px;
 	margin: 10px 35px;
 	font: normal 400 14px/1.2 Open Sans, Sans-Serif;
 }
@@ -324,7 +325,7 @@ header {
 
 .about {
 	position: relative;
-	min-height: 400px;
+	height: 400px;
 	background: #ececec;
 	
 }
@@ -358,24 +359,25 @@ header {
 	position: relative;
 	max-width: 1170px;
 	margin: 0 auto;
-	overflow-x:hidden;
-	
+	margin-top: 90px;
 }
 
-.about-back-img {
+.about-back-container {
+	position: relative;
 	width: 370px;
 	height: 260px;
-	background: blue;
-	/* background: #c1c7c8; */
+	background: #c1c7c8;
 	border-radius: 5px;
+	margin-top: 50px;
 
 }
 
-.about-back-img-2 {
+.about-back-container-2 {
 
 }
 
-.about-top-img {
+.about-top-container {
+	position: relative;
 	width: 570px;
 	height: 360px;
 	background: #c1c7c8;
@@ -385,12 +387,50 @@ header {
 	
 }
 
+.about-back-container:before,
+.about-top-container:before {
+	position: absolute;
+	content: "\f111\f111\f111";
+	font-family: "FontAwesome";
+	color: #ececec;
+	letter-spacing: 5px;
+	margin: 14px;
 
+}
 
+.about-back-container:after,
+.about-top-container:after {
+	position: absolute;
+	content: "\f068";
+	font-family: "FontAwesome";
+	color: #ececec;
+	top: 14px;
+	right: 14px;
+}
 
+.about-photo-1 {
+	height: 213px;
+	margin: 5px;
+	margin-top: 42px;
+	border-radius: 5px;
+	background-image: url(/lesson-4-css-practice/img/meeting.jpg);
+	background-size: cover;
+	background-position: center;
+}
 
+.about-photo-2 {
+	height: 313px;
+	margin: 5px;
+	margin-top: 42px;
+	border-radius: 5px;
+	background-image: url(/lesson-4-css-practice/img/team.jpg);
+	background-size: cover;
+	background-position: center;
+}
 
-
+.about-photo-3 {
+	background-image: url(/lesson-4-css-practice/img/time.jpg);
+}
 
 
 
@@ -446,6 +486,7 @@ header {
 
 footer {
     width: 100%;
+	bottom: 0;
 }
 
 .footer_navigation {
@@ -460,20 +501,37 @@ footer {
 	color: white;
 }
 
+/*
+!!!------------------------------------MEDIA-QUERIES------------------------------------!!!
+*/
+
+
 @media only screen and (max-width: 1000px) {
+	.top-bar-logo {
+		margin-left: 27px;
+	}
+	
+	.top-services {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	
 	.about-image-box {
 		flex-direction: column;
 		align-items: center;
 	}
 	
-	.about-top-img {
+	.about-top-container {
 		margin: -5% 0%;
 	}
 	
-	.about-back-img-2 {
+	.about-back-container-2 {
 		z-index: 900;
 	}
-	
+	.about-back-container {
+		margin-top: 0px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -481,14 +539,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 	}
-}
-
-@media only screen and (max-width: 600px) {
 	.slider-left-scroll, .slider-right-scroll {
 		display: none;
 	}
 }
-
-/*
-!!!------------------------------------FOOTER-END------------------------------------!!!
-*/
