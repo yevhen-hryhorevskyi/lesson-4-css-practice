@@ -3,14 +3,26 @@
     margin: 0 15px 60px;
 }
 
-.company-year-statistics-overview p {
-    width: 100%;
+.company-statistics {
+    width: 576px; /* 552px width from mockup + 12px min margin for first & last child inside*/
+    margin: 0 12px 30px;
+}
+
+.company-statistics p {
     padding-left: 12px;
     padding-right: 12px;
 }
 
-.company-year-statistics-overview p:last-of-type {
+.company-statistics p:last-of-type {
     padding-bottom: 60px;
+}
+
+/* Adaptive layouting with flexbox */
+.statistics-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .statistics-overview {
