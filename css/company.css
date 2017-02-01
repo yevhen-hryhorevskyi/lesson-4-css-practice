@@ -4,7 +4,8 @@
 }
 
 .company-statistics {
-    width: 576px; /* 552px width from mockup + 12px min margin for first & last child inside*/
+    width: 100%;
+    max-width: 576px; /* 552px width from mockup + 12px min margin for first & last child inside*/
     margin: 0 12px 30px;
 }
 
