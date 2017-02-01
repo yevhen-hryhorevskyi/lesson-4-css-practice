@@ -132,6 +132,10 @@ header {
 	background: #f3f3f3;
 }
 
+/*
+!!!------------------------------------SLIDER------------------------------------!!!
+*/
+
 .slider {
 	display: flex;
 	flex-wrap: wrap;
@@ -144,6 +148,7 @@ header {
 
 .slider-content {
 	height: 500px;
+	margin: 0 auto;
 	
 }
 
@@ -219,6 +224,10 @@ header {
 	background-color: #e2534b;
 }
 
+/*
+!!!------------------------------------SERVICES------------------------------------!!!
+*/
+
 .top-services {
 	display: flex;
 	flex-wrap:wrap;
@@ -268,7 +277,6 @@ header {
 	margin: 0 auto;
 }
 
-
 .competences-descr {
 	position:relative;
 	width: 270px;
@@ -286,7 +294,6 @@ header {
 	bottom: -27px;
 	background: #76c7c0;
 	box-shadow: 0 3px 0 #62b9b0;
-	
 }
 
 .competences-btn:hover {
@@ -300,8 +307,6 @@ header {
 	padding: 25px;
 }
 
-
-
 .competences-descr-header {
 	font: normal 700 22px/1.2 Open Sans Bold, Sans-Serif;
 	color: #7f8c8c;
@@ -312,6 +317,96 @@ header {
 	color: #7f8c8c;
 	padding: 20px;
 }
+
+/*
+!!!------------------------------------ABOUT------------------------------------!!!
+*/
+
+.about {
+	position: relative;
+	min-height: 400px;
+	background: #ececec;
+	
+}
+
+.about-line {
+	height: 17px;
+	background-image: url(/lesson-4-css-practice/img/line-2.png);
+	
+}
+
+.about-header {
+	font: normal 700 40px/1.2 Open Sans Semibold, Sans-Serif;
+	color: #e1524b;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 45px;
+	
+}
+	
+.about-text {
+	font: normal 400 14px/1.2 Open Sans, Sans-Serif;
+	color: #7f8c8c;
+	text-align: center;
+	
+}
+
+.about-image-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+	overflow-x:hidden;
+	
+}
+
+.about-back-img {
+	width: 370px;
+	height: 260px;
+	background: blue;
+	/* background: #c1c7c8; */
+	border-radius: 5px;
+
+}
+
+.about-back-img-2 {
+
+}
+
+.about-top-img {
+	width: 570px;
+	height: 360px;
+	background: #c1c7c8;
+	border-radius: 5px;
+	margin: 0% -20%;
+	z-index: 800;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Adaptive layouting with flexbox*/
@@ -365,10 +460,33 @@ footer {
 	color: white;
 }
 
-@media only screen and (max-width: 767px) {
-    /*
-        For mobile layouts
-     */
+@media only screen and (max-width: 1000px) {
+	.about-image-box {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.about-top-img {
+		margin: -5% 0%;
+	}
+	
+	.about-back-img-2 {
+		z-index: 900;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.competences {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.slider-left-scroll, .slider-right-scroll {
+		display: none;
+	}
 }
 
 /*
