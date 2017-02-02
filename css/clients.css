@@ -1,0 +1,83 @@
+/*Clients*/
+
+.clients {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.manage {
+    width: 100%;
+    color: rgb(127, 140, 140);
+    font: 900 16px 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.manage .dot {
+    width: 7px;
+    height: 7px;
+    background: rgb(225, 226, 226);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.manage .line {
+    width: 78%;
+    display: inline-block;
+    border-bottom: 1px solid rgb(225, 226, 226);
+    margin: 0;
+    position: absolute;
+    top: 13px;
+    left: 146px;
+}
+
+.manage .left-arrow {
+    width: 40px;
+    height: 37px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: rgb(152, 163, 163);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -53%);
+    box-shadow: 0 3px rgb(127, 140, 140);
+}
+
+.manage .right-arrow {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: rgb(226, 83, 75);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    box-shadow: none;
+    right: 0;
+}
+
+.manage .arrow {
+    width: 99px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.fa-angle-right, .fa-angle-left {
+    color: white;
+    font-weight: 900;
+}
+
+.img-clients {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.img-clients .client {
+    padding: 5px;
+}

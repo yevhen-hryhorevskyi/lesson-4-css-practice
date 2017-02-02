@@ -1,0 +1,81 @@
+/*Statistics*/
+
+.statistics {
+    padding-top: 215px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why-choose, .content, .what-say {
+    flex: 1;
+}
+
+.content {
+    flex-grow: 2;
+}
+
+.why-choose p, .what-say p {
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(127, 140, 140);
+    margin-bottom: 20px;
+
+}
+
+.what-say p {
+    margin-bottom: 0;
+}
+
+.why-choose ul li {
+    line-height: 1.9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+}
+
+.why-choose li:before {
+    font-family: 'FontAwesome', serif;
+    content: '\f061';
+    font-size: 12px;
+    color: rgb(225, 82, 75);
+    padding-right: 5px;
+}
+
+blockquote p {
+    font-style: italic;
+    padding: 15px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+}
+
+.what-say span {
+    line-height: 1.9;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(119, 119, 119);
+    position: absolute;
+    top: 145px;
+    left: 50px;
+}
+
+#triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 24px solid rgb(248, 248, 248);
+    border-left: 24px solid transparent;
+    margin-left: 20px;
+}
+
+.what-say {
+    position: relative;
+}
