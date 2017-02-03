@@ -1,104 +1,4 @@
 
-/*Slider*/
-.slider {
-
-}
-
-.slider-item {
-    position: relative;
-}
-
-.slider-item img {
-    width: 100%;
-    display: block;
-}
-
-.slider-caption {
-
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.slider-title {
-    display: inline-block;
-    color: white;
-    font: 800 3em/1 'OpenSans', sans-serif;
-    padding: 0 12px;
-    background: rgb(226, 83, 75);
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.slider-description {
-
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font: 400 1em/1 'OpenSans', sans-serif;
-    padding: 10px;
-    border-radius: 3px;
-}
-
-.left-arrow, .right-arrow {
-    width: 50px;
-    height: 57px;
-    text-align: center;
-    line-height: 57px;
-    color: white;
-    font-size: 34px;
-    background: rgb(232, 100, 90);
-    border-radius: 0 4px 4px 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    -webkit-box-shadow: 0 3px 0 0 rgb(226, 83, 75);
-    -moz-box-shadow: 0 3px 0 0 rgb(226, 83, 75);
-    box-shadow: 0 3px 0 0 rgb(226, 83, 75);
-}
-
-.fa-angle-double-left, .fa-angle-double-right {
-    color: white;
-}
-
-.rewind .right-arrow {
-    border-radius: 4px 0 0 4px;
-    right: 0;
-}
-
-.quick-rewind {
-    text-align: center;
-    padding: 21px 0 24px 0;
-}
-
-.quick-rewind-notactive, .quick-rewind-active {
-    display: inline-block;
-    width: 60px;
-    height: 5px;
-    background: rgb(176, 184, 185);
-}
-
-.quick-rewind-active {
-    background: rgb(226, 83, 75);
-}
-
-
-
-
-/*SLIDER ver 02*/
-
-.inner article{
-    position: relative;
-}
-.sliders{
-    position: relative;
-}
-.sliders > input {
-    display: none;
-}
-
-
 #slide1:checked ~ .slides .inner {
     margin-left: 0;
 }
@@ -188,15 +88,15 @@ article img {
 }
 
 /*.rewind label {*/
-/*display: none;*/
+    /*display: none;*/
 /*}*/
 
 /*#slide1:checked ~ .rewind label:nth-child(1),*/
 /*#slide2:checked ~ .rewind label:nth-child(2){*/
-/*display: block;*/
+    /*display: block;*/
 /*}*/
 
 /*#slide1:checked ~ .rewind label:nth-child(2),*/
 /*#slide2:checked ~ .rewind label:nth-child(1){*/
-/*display: block;*/
+    /*display: block;*/
 /*}*/

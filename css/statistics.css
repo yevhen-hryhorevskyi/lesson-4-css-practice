@@ -2,7 +2,7 @@
 
 .statistics {
     padding-top: 215px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +19,7 @@
 
 .why-choose p, .what-say p {
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     color: rgb(127, 140, 140);
     margin-bottom: 20px;
 
@@ -27,6 +27,7 @@
 
 .what-say p {
     margin-bottom: 0;
+    position: relative;
 }
 
 .why-choose ul li {
@@ -54,8 +55,21 @@ blockquote p {
     font-style: italic;
     padding: 15px;
     background-color: rgb(248, 248, 248);
-    border-radius: 3px;
+    /*background-color: rgb(248, 208, 155);*/
+    border-radius: 5px;
 }
+blockquote p:after {
+    content: "";
+    position: absolute;
+    left: 12px;
+        bottom: -24px;
+
+    width: 0;
+    height: 0;
+    border-top: 24px solid rgb(248, 248, 248);
+    border-left: 24px solid transparent;
+
+ }
 
 .what-say span {
     line-height: 1.9;
@@ -63,9 +77,7 @@ blockquote p {
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     color: rgb(119, 119, 119);
-    position: absolute;
-    top: 145px;
-    left: 50px;
+    padding-left: 46px;
 }
 
 #triangle-topright {

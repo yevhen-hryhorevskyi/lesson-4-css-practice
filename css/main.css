@@ -48,8 +48,9 @@ li {
     /*background-color: rgb(99, 193, 184);*/
 }
 
-.content {
-    /*height: 1000px;*/
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 

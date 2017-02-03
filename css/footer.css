@@ -27,7 +27,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ ul:last-child {
 }
 
 .footer_social-networks .wraper {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -135,6 +135,7 @@ ul:last-child {
 .social-networks {
     display: block;
     float: right;
+    padding-top:10px;
 }
 
 .social-networks li {
@@ -145,7 +146,7 @@ ul:last-child {
 .social-networks li a {
     display: block;
     line-height: 1;
-    margin: 14px 15px;
+    margin: 0 15px;
     font-size: 22px;
     text-decoration: none;
 }

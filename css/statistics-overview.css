@@ -95,7 +95,7 @@
 .company-year-statistics-overview {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 580px; /* 560px width from mockup + 10px min margin for first & last child inside*/
     margin: 40px auto;

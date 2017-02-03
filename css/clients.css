@@ -1,7 +1,7 @@
 /*Clients*/
 
 .clients {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -79,5 +79,18 @@
 }
 
 .img-clients .client {
-    padding: 5px;
+    /*padding: 5px;*/
 }
+/*.current{*/
+    /*width: 33%;*/
+    /*margin:  20px 0;*/
+    /*padding: 20px;*/
+/*}*/
+/*.current{*/
+    /*background: url("../img/clients/img-client.png");*/
+    /*background-size: cover;*/
+/*}*/
+/*.current > div {*/
+    /*width: 100%;*/
+    /*height: 35px;*/
+/*}*/
