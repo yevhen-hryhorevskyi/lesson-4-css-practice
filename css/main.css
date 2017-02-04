@@ -97,7 +97,7 @@ header {
 
 .line {
 	position: absolute;
-	max-width: 1600px;
+	/* max-width: 1600px; */
 	width: 100%;
 	height: 9px;
 	background-image: url(/lesson-4-css-practice/img/line.png);
@@ -421,10 +421,10 @@ header {
 
 .clients-reviews-quote {
 	position: relative;
-	font: 90% Open Sans Light Italic;
-	font-size: 14px;
+	font: italic 100%/1.5 Open Sans Regular Italic;
 	background: #f8f8f8;
 	padding: 16px;
+
 }
 
 .clients-reviews-quote:after {
@@ -432,7 +432,7 @@ header {
 	position: absolute;
 	width: 0;
 	height: 0; 
-	margin-left: -170px;
+	margin-left: -200px;
 	margin-top: 30px;
 	border: 20px solid transparent;
 	border-top: 20px solid #f8f8f8;
@@ -453,6 +453,68 @@ header {
     max-width: 580px; /* 560px width from mockup + 10px min margin for first & last child inside*/
     margin: 20px auto;
 }
+
+.happy-clients {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 25px;
+	color: #7f8c8c;
+}
+
+.clients-line {
+	display: flex;
+	align-items: center;
+	color: #e1e2e2;
+	max-width: calc(100% - 220px);
+	width: 100%;
+	padding: 0 10px;
+	font-size: 10px;
+}
+
+hr {
+	width: 100%;
+	border: none;
+	background-color: #e1e2e2;
+	height: 1px;
+}
+
+.happy-clients-scroller {
+	display: flex;
+}
+
+.happy-clients-scroller div {
+	width: 18px;
+	height: 18px;
+	background-color: #7f8c8c;
+	border-radius: 10%;
+	margin-left: 10px;
+	color: white;
+	text-align: center;
+}
+
+.happy-clients-logos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.happy-clients-logos > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 90px;
+	background-color: #f8f8f8;
+	margin-top: 50px;
+	border-radius: 5%;
+}
+
+
 
 /*
 !!!------------------------------------FOOTER------------------------------------!!!
@@ -520,6 +582,9 @@ footer {
 	}
 	.clients-reviews {
 		order: 2;
+	}
+	.happy-clients {
+		order: 3;
 	}
 }
 
