@@ -266,6 +266,10 @@ header {
 	box-shadow: 0 3px 0 #e2534b;
 }
 
+.competences-btn:hover + .competences-descr-icon {
+	color: 	#e8645a;
+}
+
 .competences-descr-icon {
 	font-size: 60px;
 	color: #62bdbd;
