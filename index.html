@@ -30,30 +30,56 @@
 			<div><a href="#"><h3>Contact</a></h3></div>
 			<div><h3><i class="fa fa-search"></i></h3></div>
 		</div>
-		<!-- <i class="fa fa-search" aria-hidden="true"></i> -->
 	</div>
 	<div class="line"></div>
 </header>
-<!-- <div class="header-fix"> -->
 
 <div class="content">
 
 	<div class="slider">
-		<div class="slider-scroll" style="border-radius: 0% 7% 7% 0%;"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
-		<div class="slider-content">
-			<div class="slider-content-block-a">Vestibulum</div>
-			<div class="slider-content-block-b">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo</div>
+		<input type="radio" name="slider" id="slide1">
+		<input type="radio" name="slider" id="slide2" checked>
+		<input type="radio" name="slider" id="slide3">
+		
+		<div id="slides">
+			<div class="slider-images">
+				<div class="page">
+					<img src="img/banner-1.jpg" alt="banner1">
+				</div>
+				<div class="page">
+					<img src="img/banner-2.jpg" alt="banner2">
+				</div>
+				<div class="page">
+					<img src="img/banner-3.jpg" alt="banner3">
+				</div>
+			</div>
 		</div>
 		
-		<div class="slider-scroll" style="border-radius: 7% 0% 0% 7%;"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
+		<div id="slider-scroll-r">
+			<label for="slide1"><i class="fa fa-angle-double-right" aria-hidden="true"></i></label>
+			<label for="slide2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></label>
+			<label for="slide3"><i class="fa fa-angle-double-right" aria-hidden="true"></i></label>
+		</div>	
+
+		<div id="slider-scroll-l">
+			<label for="slide1"><i class="fa fa-angle-double-left" aria-hidden="true"></i></label>
+			<label for="slide2"><i class="fa fa-angle-double-left" aria-hidden="true"></i></label>
+			<label for="slide3"><i class="fa fa-angle-double-left" aria-hidden="true"></i></label>
+		</div>	
+		
+		<div class="scroller">
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+			<label for="slide3"></label>
+		</div>
+
+		<!-- <div class="slider-text">
+			<div class="slider-text-a">Vestibulum</div>
+			<div class="slider-text-b">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo</div>
+		</div> -->
+	
 	</div>
 	
-	<div class="scroller">
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-
 	<div class="top-services">
 		<div class="top-services-content">
 			<h3>Some of our top services</h3>
