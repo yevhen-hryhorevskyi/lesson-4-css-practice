@@ -16,6 +16,7 @@ header * {
 .navbar li {
     display: block;
     float: left;
+    position: relative;
 }
 
 .navbar li:before {
@@ -31,6 +32,7 @@ header * {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
     border-radius: 3px;
     transition: color .3s, background-color .3s, box-shadow .3s;
 }
@@ -40,11 +42,71 @@ header * {
     box-shadow: 0 3px 0 rgb(82, 139, 134);
 }
 
-.navbar li a:hover,
-.navbar li.active a:hover {
+.navbar li:hover a {
     color: rgb(255, 255, 255);
     background-color: rgb(232, 100, 90);
     box-shadow: 0 3px 0 rgb(226, 83, 75);
+}
+
+.navbar li.has-children > a:before {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+}
+
+.navbar li ul {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -10px;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: rgb(226, 83, 75);
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.navbar li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar li ul:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent #e2534b transparent;
+}
+
+.navbar .navbar li li {
+    float: none;
+}
+
+.navbar li li a {
+    margin: 2px;
+    padding-left: 9px;
+    background-color: rgb(229, 101, 93);
+    text-transform: none;
+    box-shadow: none;
+}
+
+.navbar li li a:before {
+    font-family: 'FontAwesome';
+    content: '\f105';
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+}
+
+.navbar li li a:hover {
+    background-color: rgb(118, 199, 192);
 }
 
 .navbar .search {

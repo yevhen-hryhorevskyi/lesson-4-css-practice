@@ -4,7 +4,7 @@
 }
 
 .services-lead {
-    width: 100%;
+    width: calc(100% - 30px);
     display: flex;
     margin: 0 15px 50px;
     padding: 25px 35px;
