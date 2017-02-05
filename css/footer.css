@@ -113,14 +113,20 @@
     color: rgb(225, 82, 75);
 }
 
-.footer_navigation-blog a img {
+.footer_navigation-blog a:before {
     position: absolute;
-    left: 0;
-    top: 3px;
+    font-family: 'FontAwesome';
+    content: '\f03e';
     width: 70px;
-    max-width: 100%;
-    height: auto;
-    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 0, .2);
+    padding: 20px 0;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
 }
 
 .footer_navigation-blog time {
