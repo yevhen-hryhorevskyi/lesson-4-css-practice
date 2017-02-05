@@ -1,3 +1,99 @@
+.company-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-lead {
+    width: calc(100% - 30px);
+    margin: 0 15px 60px;
+    text-align: center;
+}
+
+.company-lead h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(225, 82, 75);
+    text-transform: uppercase;
+}
+
+.company-pictures {
+    width: calc(100% - 30px);
+    margin: 0 15px 60px;
+    position: relative;
+}
+
+.company-pictures .img-wrap {
+    position: relative;
+    border-radius: 3px;
+}
+
+.company-pictures .img-wrap:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    padding: 42px 4px 4px;
+    background-color: rgb(176, 184, 185);
+    transform: translate(0, -50%);
+    width: 360px;
+}
+
+.company-pictures .img-wrap:nth-child(2) {
+    position: relative;
+    z-index: 2;
+    width: 560px;
+    margin: 0 auto;
+    padding: 45px 4px 4px;
+    background-color: rgb(193, 199, 200);
+}
+
+.company-pictures .img-wrap:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    padding: 42px 4px 4px;
+    background-color: rgb(176, 184, 185);
+    transform: translate(0, -50%);
+    width: 360px;
+}
+
+.company-pictures .img-wrap:before,
+.company-pictures .img-wrap:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: '\f141';
+    line-height: 24px;
+    font-size: 24px;
+    float: left;
+    color: rgb(236, 236, 236);
+    left: 14px;
+    top: 9px;
+}
+
+.company-pictures .img-wrap:after,
+.company-pictures .img-wrap:after {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: '\f068';
+    line-height: 24px;
+    font-size: 24px;
+    float: left;
+    color: rgb(236, 236, 236);
+    right: 14px;
+    top: 10px;
+}
+
+.company-pictures img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
 .company-sidebar {
     flex: 1;
     margin: 0 15px 60px;
