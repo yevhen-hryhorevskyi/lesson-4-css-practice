@@ -10,7 +10,7 @@ hr:before {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -4px;
+    transform: translate(0, -50%);
     width: 7px;
     height: 7px;
     background-color: rgb(225, 226, 226);
