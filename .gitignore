@@ -1,4 +1,4 @@
 # ignore all idea's specific project files.
 .idea
 lesson-4-css-practice.iml
-
+.DS_Store

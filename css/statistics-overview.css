@@ -59,7 +59,7 @@
     width: inherit;
 
     border-radius: 60px 60px 0 0;
-    border: 20px solid red;
+    border: 20px solid rgb(226, 83, 75);
     box-sizing: border-box;
     border-bottom: 0;
 }
@@ -70,7 +70,7 @@
     width: inherit;
 
     border-radius: 60px 60px 0 0;
-    border: 20px solid grey;
+    border: 20px solid rgb(118, 199, 192);
     box-sizing: border-box;
     border-bottom: 0;
 
@@ -90,3 +90,34 @@
     */
     /*transform: rotate(90deg);*/
 }
+
+/* Adaptive layouting with flexbox*/
+.company-year-statistics-overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 580px; /* 560px width from mockup + 10px min margin for first & last child inside*/
+    margin: 40px auto;
+}
+
+/* Adaptive layouting with blocks*/
+/*.company-year-statistics-overview {*/
+/*width: 100%;*/
+/*max-width: 580px;*/
+/*margin: 40px auto;*/
+/*}*/
+
+/*.company-year-statistics-overview:before,*/
+/*.company-year-statistics-overview:after {*/
+/*content: " ";*/
+/*display: table;*/
+/*}*/
+
+/*.company-year-statistics-overview:after {*/
+/*clear: both;*/
+/*}*/
+
+/*.company-year-statistics-overview > .statistics-overview {*/
+/*float: left;*/
+/*}*/
