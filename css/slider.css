@@ -38,14 +38,28 @@
 	width: 100%;
 }
 
-#slider-scroll-r {
+.slider-scroll label{
 	position: absolute;
-	right: 0;
+	width: 50px;
+	height: 57px;
+	background: #e8645a;
+	box-shadow: 0 3px 0 #e2534b;
+	margin-top: 220px;
+	font-size: 45px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	
 }
 
-#slider-scroll-l {
-	position: absolute;
+#slider-scroll-r label {
+	right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+#slider-scroll-l label {
 	left: 0;
+	border-radius: 0 5px 5px 0;
 }
 
 #slider-scroll-r label,
@@ -54,35 +68,12 @@
 }
 
 #slide1:checked  ~ #slider-scroll-r label:nth-child(2),
-#slide2:checked  ~ #slider-scroll-r label:nth-child(3),
-#slide3:checked  ~ #slider-scroll-r label:nth-child(1) {
-	width: 50px;
-	height: 57px;
-	background: #e8645a;
-	box-shadow: 0 3px 0 #e2534b;
-	margin-top: 220px;
-	font-size: 45px;
-	text-align: center;
-	display: block;
-	border-radius: 7% 0% 0% 7%;
-	color: white;
-	cursor: pointer;
-}
-
-#slide1:checked  ~ #slider-scroll-l label:nth-child(3),
-#slide2:checked  ~ #slider-scroll-l label:nth-child(1),
+#slide2:checked  ~ #slider-scroll-r label:last-child,
+#slide3:checked  ~ #slider-scroll-r label:first-child,
+#slide1:checked  ~ #slider-scroll-l label:last-child,
+#slide2:checked  ~ #slider-scroll-l label:first-child,
 #slide3:checked  ~ #slider-scroll-l label:nth-child(2) {
-	width: 50px;
-	height: 57px;
-	background: #e8645a;
-	box-shadow: 0 3px 0 #e2534b;
-	margin-top: 220px;
-	font-size: 45px;
-	text-align: center;
 	display: block;
-	border-radius: 0% 7% 7% 0%;
-	color: white;
-	cursor: pointer;
 }
 
 .scroller {
@@ -100,9 +91,10 @@
 	background-color: #b0b8b9;
 }
 
-#slide1:checked  ~ .scroller label:nth-child(1),
+#slide1:checked  ~ .scroller label:first-child,
 #slide2:checked  ~ .scroller label:nth-child(2),
-#slide3:checked  ~ .scroller label:nth-child(3),
+#slide3:checked  ~ .scroller label:last-child,
+
 .scroller label:hover {
 	background-color: #e2534b;
 	cursor: pointer;
@@ -134,7 +126,7 @@
 	margin: 0 auto;
 	margin-top: 10px;
 	padding: 12px;
-	background: rgb(63, 70, 70);
+	background: #3f4646;
 	opacity: 0.7;
 	border-radius: 5px;
 }
@@ -144,8 +136,7 @@
 */
 
 @media only screen and (max-width: 600px) {
-	#slider-scroll-r,
-	#slider-scroll-l {
+	.slider-scroll {
 		display: none;
 	}
 }
