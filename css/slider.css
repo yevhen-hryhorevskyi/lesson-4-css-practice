@@ -24,7 +24,7 @@
 #slide3:checked ~ #slides .slider-images { margin-left: -200%; }
 
 #slides .slider-images {
-	transition: all 0.7s;
+	transition: margin-left 0.7s;
 }
 
 .page {
@@ -112,8 +112,6 @@
 	position: absolute;
 	top: 160px;
 	width: 100%;
-	/* max-width: 470px; */
-	/* height: 500px; */
 	margin: 0 auto;
 	color: white;
 }
