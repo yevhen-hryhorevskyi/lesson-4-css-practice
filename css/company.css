@@ -1,14 +1,4 @@
-.company-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .company-lead {
-    width: calc(100% - 30px);
     margin: 0 15px 60px;
     text-align: center;
 }
@@ -21,20 +11,27 @@
 }
 
 .company-pictures {
-    width: calc(100% - 30px);
     margin: 0 15px 60px;
     position: relative;
 }
 
 .company-pictures .img-wrap {
-    position: relative;
     border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    width: 368px;
+    top: 50%;
+    margin: 0;
+    padding: 42px 4px 4px;
+    background-color: rgb(176, 184, 185);
+    transform: translate(0, -50%);
 }
 
-.company-pictures .img-wrap {
+.company-pictures .img-wrap-active {
+    border-radius: 3px;
     position: relative;
     z-index: 2;
-    width: 560px;
+    width: 568px;
     margin: 0 auto;
     padding: 44px 4px 4px;
     background-color: rgb(193, 199, 200);
@@ -42,33 +39,15 @@
 }
 
 .company-pictures .img-wrap:first-child {
-    position: absolute;
-    z-index: 1;
-    width: 360px;
     left: 0;
-    top: 50%;
-    margin: 0;
-    padding-top: 42px;
-    background-color: rgb(176, 184, 185);
-    transform: translate(0, -50%);
-    box-shadow: none;
 }
 
 .company-pictures .img-wrap:last-child {
-    position: absolute;
-    z-index: 1;
-    width: 360px;
     right: 0;
-    top: 50%;
-    margin: 0;
-    padding-top: 42px;
-    background-color: rgb(176, 184, 185);
-    transform: translate(0, -50%);
-    box-shadow: none;
 }
 
 .company-pictures .img-wrap:before,
-.company-pictures .img-wrap:before {
+.company-pictures .img-wrap-active:before {
     position: absolute;
     font-family: 'FontAwesome';
     content: '\f141';
@@ -80,7 +59,7 @@
 }
 
 .company-pictures .img-wrap:after,
-.company-pictures .img-wrap:after {
+.company-pictures .img-wrap-active:after {
     position: absolute;
     font-family: 'FontAwesome';
     content: '\f068';
@@ -97,27 +76,33 @@
     border-radius: 3px;
 }
 
+.company-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .company-sidebar {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
     margin: 0 15px 60px;
 }
 
 .company-statistics {
-    width: 100%;
-    max-width: 576px; /* 552px width from mockup + 12px min margin for first & last child inside*/
-    margin: 0 12px 30px;
+    width: 600px;
+    margin-bottom: 30px;
 }
 
-.company-statistics p {
-    padding-left: 12px;
-    padding-right: 12px;
+.company-statistics-lead {
+    margin: 0 15px;
 }
 
 .company-statistics p:last-of-type {
     padding-bottom: 60px;
 }
 
-/* Adaptive layouting with flexbox */
 .statistics-row {
     display: flex;
     flex-wrap: wrap;
@@ -125,18 +110,17 @@
     width: 100%;
 }
 
-.statistics-overview {
+.statistics-overview-wrap {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 30px);
     position: relative;
-    width: 144px; /* 120px width + min margins from left & right = 12px */
-    margin-bottom: 30px;
+    margin: 0 15px 30px;
+}
 
-    /*
-        If you want to make some effect of adaptive components,
-        then you may play with the width settings below
-     */
-    /*width: 100%;*/
-    /*min-width: 120px;*/
-    /*max-width: 300px;*/
+.statistics-overview {
+    width: 120px;
+    margin: 0 auto;
 }
 
 .statistics-overview_progress-number {

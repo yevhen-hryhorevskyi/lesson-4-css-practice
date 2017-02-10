@@ -50,8 +50,12 @@ header {
     background-image: linear-gradient(#ececec 400px, transparent 400px);
 }
 
+.company-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .clients {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -59,6 +63,15 @@ header {
 .footer_navigation {
     padding: 45px 0;
     background-color: rgb(118, 199, 192);
+}
+
+.footer_navigation-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer_social-networks {
