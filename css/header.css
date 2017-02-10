@@ -8,15 +8,42 @@ header * {
     margin: 25px 15px;
 }
 
-.navbar ul {
-    display: block;
+.navbar-toggle {
     float: right;
+    background: none;
+    line-height: 1;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 20px 15px;
+    padding: 6px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: background-color .3s;
+}
+
+.navbar-toggle:hover {
+    background-color: rgb(232, 100, 90);
+}
+
+.navbar-toggle:focus {
+    outline: 0;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    background-color: rgb(226, 83, 75);
+    padding-bottom: 0;
 }
 
 .navbar li {
     display: block;
-    float: left;
-    position: relative;
 }
 
 .navbar li:before {
@@ -26,26 +53,25 @@ header * {
 .navbar li a {
     display: block;
     line-height: 1;
-    margin: 25px 15px;
-    padding: 9px 13px 8px;
+    margin: 4px;
+    padding: 14px 15px 13px;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
     border-radius: 3px;
+    background-color: rgb(229, 101, 93);
     transition: color .3s, background-color .3s, box-shadow .3s;
 }
 
 .navbar li.active a {
     background-color: rgb(98, 162, 158);
-    box-shadow: 0 3px 0 rgb(82, 139, 134);
 }
 
-.navbar li:hover a {
+.navbar li a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(232, 100, 90);
-    box-shadow: 0 3px 0 rgb(226, 83, 75);
+    background-color: rgb(118, 199, 192);
 }
 
 .navbar li.has-children > a:before {
@@ -57,44 +83,17 @@ header * {
 }
 
 .navbar li ul {
-    visibility: hidden;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: -10px;
-    padding: 2px;
-    border-radius: 3px;
-    background-color: rgb(226, 83, 75);
-    opacity: 0;
-    transition: opacity .3s linear;
-}
-
-.navbar li:hover ul {
-    visibility: visible;
-    opacity: 1;
-}
-
-.navbar li ul:before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 10px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 6px 6px 6px;
-    border-color: transparent transparent #e2534b transparent;
-}
-
-.navbar .navbar li li {
-    float: none;
+    position: static;
 }
 
 .navbar li li a {
-    margin: 2px;
-    padding-left: 9px;
-    background-color: rgb(229, 101, 93);
+    padding-left: 34px;
     text-transform: none;
     box-shadow: none;
+}
+
+.navbar li:hover li a {
+    background-color: rgb(229, 101, 93);
 }
 
 .navbar li li a:before {
@@ -109,22 +108,111 @@ header * {
     background-color: rgb(118, 199, 192);
 }
 
-.navbar .search {
+.navbar-search {
+    display: block;
+    width: calc(100% - 8px);
+    text-align: left;
     background: none;
+    background-color: rgb(229, 101, 93);
     line-height: 1;
-    margin: 25px 15px;
-    padding: 7px 0 7px 13px;
+    margin: 4px;
+    padding: 12px 15px;
     font-size: 16px;
+    border-radius: 3px;
 }
 
-.navbar .search i {
-    transition: color .3s;
+.navbar-search:hover {
+    background-color: rgb(118, 199, 192);
 }
 
-.navbar .search:focus {
+.navbar-search:focus {
     outline: 0;
 }
 
-.navbar .search:hover i {
-    color: rgb(226, 83, 75);
+@media only screen and (min-width: 992px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar ul {
+        display: block !important;
+        position: static;
+        width: auto;
+        float: right;
+        background-color: transparent;
+    }
+
+    .navbar li {
+        float: left;
+        position: relative;
+    }
+
+    .navbar li a {
+        margin: 25px 15px 25px 0;
+        padding: 9px 13px 8px;
+        background-color: transparent;
+    }
+
+    .navbar li.active a {
+        box-shadow: 0 3px 0 rgb(82, 139, 134);
+    }
+
+    .navbar li:hover a {
+        background-color: rgb(232, 100, 90);
+        box-shadow: 0 3px 0 rgb(226, 83, 75);
+    }
+
+    .navbar li ul {
+        visibility: hidden;
+        position: absolute;
+        margin-top: -10px;
+        border-radius: 3px;
+        background-color: rgb(226, 83, 75);
+        opacity: 0;
+        transition: opacity .3s linear;
+    }
+
+    .navbar li:hover ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar li ul:before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 6px 6px;
+        border-color: transparent transparent #e2534b transparent;
+    }
+
+    .navbar li li {
+        float: none;
+    }
+
+    .navbar li li a {
+        margin: 4px;
+        padding-left: 9px;
+    }
+
+    .navbar-search {
+        background: none;
+        margin: 25px 15px 25px 0;
+        padding: 7px 0 7px 13px;
+    }
+
+    .navbar-search:hover {
+        background: none;
+    }
+
+    .navbar-search i {
+        transition: color .3s;
+    }
+
+    .navbar-search:hover i {
+        color: rgb(226, 83, 75);
+    }
 }
