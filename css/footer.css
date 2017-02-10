@@ -4,10 +4,11 @@
 }
 
 .footer_navigation-text {
-    flex-grow: 2.176470588;
+    flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 0;
+    flex-basis: calc(100% - 30px);
     margin: 0 15px;
+    padding-bottom: 45px;
 }
 
 .footer_navigation .navbar-brand {
@@ -38,9 +39,10 @@
 
 .footer_navigation-nav {
     flex-grow: 1;
-    flex-shrink: 2.176470588;
-    flex-basis: 0;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 30px);
     margin: 0 15px;
+    padding-bottom: 45px;
 }
 
 .footer_navigation-nav h4 {
@@ -70,6 +72,14 @@
 .footer_navigation-nav a {
     line-height: 1.8;
     text-decoration: none;
+}
+
+.footer_navigation-blog {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(100% - 30px);
+    margin: 0 15px;
+    padding-bottom: 45px;
 }
 
 .footer_navigation-blog h4 {
@@ -163,4 +173,32 @@
 
 .social-networks li:before {
     content: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer_navigation-text {
+        flex-basis: calc(100% - 30px);
+    }
+
+    .footer_navigation-nav {
+        flex-basis: calc(25% - 30px);
+    }
+
+    .footer_navigation-blog {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer_navigation-text {
+        flex-basis: calc(33.33% - 30px);
+    }
+
+    .footer_navigation-nav {
+        flex-basis: calc(16.67% - 30px);
+    }
+
+    .footer_navigation-blog {
+        flex-basis: calc(33.33% - 30px);
+    }
 }
