@@ -3,6 +3,28 @@
     color: rgb(255, 255, 255);
 }
 
+.footer_navigation:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgb(145, 210, 205) 4%, transparent 4%, transparent 20%, rgb(145, 210, 205) 20%, rgb(145, 210, 205) 24%, transparent 24%, transparent 40%, rgb(145, 210, 205) 40%, rgb(145, 210, 205) 44%, transparent 44%, transparent 60%, rgb(145, 210, 205) 60%, rgb(145, 210, 205) 64%, transparent 64%, transparent 80%, rgb(145, 210, 205) 80%, rgb(145, 210, 205) 84%, transparent 84%);
+    background-size: 25px 7px;
+}
+
+.footer_navigation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgb(145, 210, 205) 8%, transparent 8%);
+    background-size: 25px 9px;
+}
+
 .footer_navigation-text {
     flex-grow: 1;
     flex-shrink: 1;

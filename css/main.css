@@ -10,6 +10,7 @@ header {
     right: 0;
     height: 80px;
     background-color: rgb(118, 199, 192);
+    border-bottom: 1px solid rgb(106, 179, 172);
     -webkit-transform: translateZ(0);
     z-index: 999;
 }
@@ -24,8 +25,9 @@ header {
 }
 
 .company {
+    position: relative;
     padding-top: 70px;
-    background-image: linear-gradient(#ececec 400px, transparent 400px);
+    background-image: linear-gradient(rgb(236, 236, 236) 400px, transparent 400px);
 }
 
 .company-wrap {
@@ -39,8 +41,10 @@ header {
 }
 
 .footer_navigation {
+    position: relative;
     padding-top: 45px;
     background-color: rgb(118, 199, 192);
+    border-top: 1px solid rgb(145, 210, 205);
 }
 
 .footer_navigation-wrapper {
