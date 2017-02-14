@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/statistics-overview.css">
@@ -19,21 +20,27 @@
 </head>
 <body>
 <header>
-    <div class="top-bar">
+    <nav class="top-bar">
 		<div class="logo"><span>Modus</span>Versus</div>
-		<div class="top-bar-menu">
-			<div><a href="#"><h3>Home</a></h3></div>
-			<div><a href="#"><h3>About</a></h3></div>
-			<div><a href="#"><h3>Services</a></h3></div>
-			<div><a href="#"><h3>Portfolio</a></h3></div>
-			<div><a href="#"><h3>Blog</a></h3></div>
-			<div><a href="#"><h3>Features</a></h3></div>
-			<div><a href="#"><h3>Contact</a></h3></div>
-			<div><h3><i class="fa fa-search"></i></h3></div>
-		</div>
-	</div>
-	<div class="line"></div>
+		<ul class="top-bar-menu">
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Services</li></a>
+			<a href="#"><li id="top-bar-submenu">Portfolio
+				<ul>
+					<a href="#"><li>Portfolio 1 column page</li></a>
+					<a href="#"><li>Portfolio 2 column page</li></a>
+					<a href="#"><li>Portfolio 3 column page</li></a>
+				</ul>
+			</li></a>
+			<a href="#"><li>Blog</li></a>
+			<a href="#"><li>Features</li></a>
+			<a href="#"><li>Contact</li></a>
+			<a href="#"><li><i class="fa fa-search"></i></li></a>
+		</ul>
+	</nav>
 </header>
+<div class="line"></div>
 
 <div class="content">
 
