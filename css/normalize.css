@@ -4,8 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font: normal 400 15px/1.2 Arial, Sans-Serif;
-    color: #151315;
+    /*font: normal 400 15px/1.2 Arial, Sans-Serif;
+    color: #151315;*/
 }
 
 /**
@@ -96,6 +96,8 @@ template {
 
 a {
     background-color: transparent;
+	text-decoration: none;
+	color: inherit;
 }
 
 /**

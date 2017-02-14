@@ -1,0 +1,142 @@
+/*
+!!!------------------------------------SLIDER------------------------------------!!!
+*/
+
+.slider {
+	position: relative;
+	max-width: 2560px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider input {
+	display: none;
+}
+
+.slider-images {
+	width: 300%;
+}
+
+#slide1:checked ~ #slides .slider-images { margin-left: 0; }
+#slide2:checked ~ #slides .slider-images { margin-left: -100%; }
+#slide3:checked ~ #slides .slider-images { margin-left: -200%; }
+
+#slides .slider-images {
+	transition: margin-left 0.7s;
+}
+
+.page {
+	float: left;
+	width: 33.33333333%;
+	height: 500px;
+}
+
+.page img {
+	height: 100%;
+	width: 100%;
+}
+
+.slider-scroll label{
+	position: absolute;
+	width: 50px;
+	height: 57px;
+	background: #e8645a;
+	box-shadow: 0 3px 0 #e2534b;
+	margin-top: 220px;
+	font-size: 45px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	
+}
+
+#slider-scroll-r label {
+	right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+#slider-scroll-l label {
+	left: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+#slider-scroll-r label,
+#slider-scroll-l label {
+	display: none;
+}
+
+#slide1:checked  ~ #slider-scroll-r label:nth-child(2),
+#slide2:checked  ~ #slider-scroll-r label:last-child,
+#slide3:checked  ~ #slider-scroll-r label:first-child,
+#slide1:checked  ~ #slider-scroll-l label:last-child,
+#slide2:checked  ~ #slider-scroll-l label:first-child,
+#slide3:checked  ~ #slider-scroll-l label:nth-child(2) {
+	display: block;
+}
+
+.scroller {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.scroller label {
+	width: 60px;
+	height: 5px;
+	background-color: #b0b8b9;
+}
+
+#slide1:checked  ~ .scroller label:first-child,
+#slide2:checked  ~ .scroller label:nth-child(2),
+#slide3:checked  ~ .scroller label:last-child,
+
+.scroller label:hover {
+	background-color: #e2534b;
+	cursor: pointer;
+}
+
+.slider-text {
+	position: absolute;
+	top: 160px;
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+}
+
+.slider-text-a {
+	max-width: 340px;
+	text-align: center;
+	margin: 0 auto;
+	font: normal 900 45px/1.2 Open Sans Bold, Sans-Serif;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	background: #e2534b;
+	border-radius: 5px;
+}
+
+.slider-text-b {
+	width: 100%;
+	max-width: 470px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 12px;
+	background: #3f4646;
+	opacity: 0.7;
+	border-radius: 5px;
+}
+
+/*
+!!!------------------------------------MEDIA-QUERIES------------------------------------!!!
+*/
+
+@media only screen and (max-width: 600px) {
+	.slider-scroll {
+		display: none;
+	}
+}

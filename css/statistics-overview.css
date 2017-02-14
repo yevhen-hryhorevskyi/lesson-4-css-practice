@@ -15,8 +15,8 @@
     position: absolute;
     left: 50%;
     /* Must be the same as progress-bar height. In such case we have number straight below the arc*/
-    top: 60px;
-    font-size: 28px;
+    top: 65px;
+    font: 900 25px Open Sans Bold, Sans-Serif;
     color: #848484;
     /*
         As we have a value which starts straight above the arc's center,
@@ -29,9 +29,10 @@
 
 .statistics-overview_progress-label {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 14px;
+	text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    font: 900 17px Open Sans Bold, Sans-Serif;
     color: #848484;
 }
 
@@ -59,7 +60,7 @@
     width: inherit;
 
     border-radius: 60px 60px 0 0;
-    border: 20px solid red;
+    border: 15px solid #e2534b;
     box-sizing: border-box;
     border-bottom: 0;
 }
@@ -70,7 +71,7 @@
     width: inherit;
 
     border-radius: 60px 60px 0 0;
-    border: 20px solid grey;
+    border: 15px solid #76c7c0;
     box-sizing: border-box;
     border-bottom: 0;
 

@@ -2,67 +2,287 @@
 <html style="width: 100%; height: 100%;">
 <head>
     <title>Modus Versus</title>
-    <link rel="shortcut icon" href="./img/favicon.ico">
 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/statistics-overview.css">
-
     <!--<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css">-->
     <!--<link rel="stylesheet" media="screen and (min-width: 768px)" href="css/desktop.css">-->
+
 </head>
 <body>
 <header>
-    Header
+    <nav class="top-bar">
+		<div class="logo"><span>Modus</span>Versus</div>
+		<ul class="top-bar-menu">
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Services</li></a>
+			<a href="#"><li id="top-bar-submenu">Portfolio
+				<ul>
+					<a href="#"><li>Portfolio 1 column page</li></a>
+					<a href="#"><li>Portfolio 2 column page</li></a>
+					<a href="#"><li>Portfolio 3 column page</li></a>
+				</ul>
+			</li></a>
+			<a href="#"><li>Blog</li></a>
+			<a href="#"><li>Features</li></a>
+			<a href="#"><li>Contact</li></a>
+			<a href="#"><li><i class="fa fa-search"></i></li></a>
+		</ul>
+	</nav>
 </header>
-<div class="header-fix"></div>
+<div class="line"></div>
 
 <div class="content">
-    <div class="company-year-statistics-overview">
-        <div class="statistics-overview">
-            <div class="statistics-overview_progress-bar">
-                <!-- rotationAngle = 180 * 0.5 = 90-->
-                <div class="statistics-overview_progress-bar-arc" style="transform: rotate(90deg);"></div>
-            </div>
-            <div class="statistics-overview_progress-number">50</div>
-            <div class="statistics-overview_progress-label">SUSPENDISSE</div>
-        </div>
-        <div class="statistics-overview">
-            <div class="statistics-overview_progress-bar">
-                <!-- rotationAngle = 180 * 0.7 = 126-->
-                <div class="statistics-overview_progress-bar-arc" style="transform: rotate(126deg);"></div>
-            </div>
-            <div class="statistics-overview_progress-number">70</div>
-            <div class="statistics-overview_progress-label">MAECENAS</div>
-        </div>
-        <div class="statistics-overview">
-            <div class="statistics-overview_progress-bar">
-                <!-- rotationAngle = 180 * 0.8 = 144-->
-                <div class="statistics-overview_progress-bar-arc" style="transform: rotate(144deg);"></div>
-            </div>
-            <div class="statistics-overview_progress-number">80</div>
-            <div class="statistics-overview_progress-label">ALIQUAM</div>
-        </div>
-        <div class="statistics-overview">
-            <div class="statistics-overview_progress-bar">
-                <!-- rotationAngle = 180 * 1 = 180-->
-                <div class="statistics-overview_progress-bar-arc" style="transform: rotate(180deg);"></div>
-            </div>
-            <div class="statistics-overview_progress-number">100</div> <!--26px; #rgb(130,130,130)-->
-            <div class="statistics-overview_progress-label">HABITASSE</div> <!--18px; #rgb(130,130,130)-->
-        </div>
-    </div>
+
+	<div class="slider">
+		<input type="radio" name="slider" id="slide1">
+		<input type="radio" name="slider" id="slide2" checked>
+		<input type="radio" name="slider" id="slide3">
+		
+		<div id="slides">
+			<div class="slider-images">
+				<div class="page">
+					<img src="img/banner-2.jpg" alt="banner2">
+				</div>
+				<div class="page">
+					<img src="img/banner-1.jpg" alt="banner1">
+				</div>
+				<div class="page">
+					<img src="img/banner-3.jpg" alt="banner3">
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-text">
+			<div class="slider-text-a">Vestibulum</div>
+			<div class="slider-text-b">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo</div>
+		</div>
+		
+		<div class="slider-scroll" id="slider-scroll-r">
+			<label for="slide1"><i class="fa fa-angle-double-right" aria-hidden="true"></i></label>
+			<label for="slide2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></label>
+			<label for="slide3"><i class="fa fa-angle-double-right" aria-hidden="true"></i></label>
+		</div>	
+
+		<div class="slider-scroll" id="slider-scroll-l">
+			<label for="slide1"><i class="fa fa-angle-double-left" aria-hidden="true"></i></label>
+			<label for="slide2"><i class="fa fa-angle-double-left" aria-hidden="true"></i></label>
+			<label for="slide3"><i class="fa fa-angle-double-left" aria-hidden="true"></i></label>
+		</div>	
+		
+		<div class="scroller">
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+			<label for="slide3"></label>
+		</div>
+	
+	</div>
+	
+	<div class="top-services">
+		<div class="top-services-content">
+			<h3>Some of our top services</h3>
+			<p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
+		</div>
+		<a href="#"><div class="red-button">View more</div></a>
+	</div>
+	
+	<div class="competences">
+		<div class="competences-descr">
+			<a class="red-button competences-btn" href="#"><div>Read more</div></a>
+			<div class="competences-descr-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
+			<div class="competences-descr-header"><h3>Suspendisse</h3></div>
+			<div class="competences-descr-text">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</div>
+		</div>
+		<div class="competences-descr">
+			<a class="red-button competences-btn" href="#"><div>Read more</div></a>
+			<div class="competences-descr-icon"><i class="fa fa-key" aria-hidden="true"></i></div>
+			<div class="competences-descr-header"><h3>Maecenas</h3></div>
+			<div class="competences-descr-text">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</div>
+		</div>
+		<div class="competences-descr">
+			<a class="red-button competences-btn" href="#"><div>Read more</div></a>
+			<div class="competences-descr-icon"><i class="fa fa-flag" aria-hidden="true"></i></div>
+			<div class="competences-descr-header"><h3>Aliquam</h3></div>
+			<div class="competences-descr-text">Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</div>
+		</div>
+		<div class="competences-descr">
+			<a class="red-button competences-btn" href="#"><div>Read more</div></a>
+			<div class="competences-descr-icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
+			<div class="competences-descr-header"><h3>Habitasse</h3></div>
+			<div class="competences-descr-text">Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</div>
+		</div>
+	</div>
+	
+	<div>
+		<div class="about"></div>
+		<div class="about-line"></div>
+		<div class="about-header">Why Modus Versus?</div>
+		<div class="about-text">Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</div>
+		<div class="about-image-box">
+			<div class="about-back-container">
+				<div class = "about-photo-1"></div>
+			</div>
+			<div class="about-top-container">
+				<div class = "about-photo-2"></div>
+			</div>
+			<div class="about-back-container about-back-container-2">
+				<div class = "about-photo-1 about-photo-3"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="clients">
+		<div class="clients-reviews">
+			<h3 style="padding: 25px 0px">Who Choose Us?</h3>
+			<ul>
+				<li>Quisque at massa ipsum</li>
+				<li>Maecenas a lorem augue, egestas</li>
+				<li>Cras vitae felis at lacus eleifend</li>
+				<li>Etiam auctor diam pellentesque</li>
+				<li>Nulla ac massa at dolor</li>
+				<li>Condimentum eleifend vitae vitae</li>
+			</ul>
+		</div>
+		<div class="diagrams">
+			<div class="clients-statistics-overview-text">
+				Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus
+				<a href="#">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
+			</div>
+			<div class="company-year-statistics-overview">
+				<div class="statistics-overview">
+					<div class="statistics-overview_progress-bar">
+						<!-- rotationAngle = 180 * 0.5 = 90-->
+						<div class="statistics-overview_progress-bar-arc" style="transform: rotate(90deg);"></div>
+					</div>
+					<div class="statistics-overview_progress-number">50</div>
+					<div class="statistics-overview_progress-label">Suspendisse</div>
+				</div>
+				<div class="statistics-overview">
+					<div class="statistics-overview_progress-bar">
+						<!-- rotationAngle = 180 * 0.7 = 126-->
+						<div class="statistics-overview_progress-bar-arc" style="transform: rotate(126deg);"></div>
+					</div>
+					<div class="statistics-overview_progress-number">70</div>
+					<div class="statistics-overview_progress-label">Maecenas</div>
+				</div>
+				<div class="statistics-overview">
+					<div class="statistics-overview_progress-bar">
+						<!-- rotationAngle = 180 * 0.8 = 144-->
+						<div class="statistics-overview_progress-bar-arc" style="transform: rotate(144deg);"></div>
+					</div>
+					<div class="statistics-overview_progress-number">80</div>
+					<div class="statistics-overview_progress-label">Aliquam</div>
+				</div>
+				<div class="statistics-overview">
+					<div class="statistics-overview_progress-bar">
+						<!-- rotationAngle = 180 * 1 = 180-->
+						<div class="statistics-overview_progress-bar-arc" style="transform: rotate(180deg);"></div>
+					</div>
+					<div class="statistics-overview_progress-number">100</div> <!--26px; #rgb(130,130,130)-->
+					<div class="statistics-overview_progress-label">Habitasse</div> <!--18px; #rgb(130,130,130)-->
+				</div>
+			</div>
+		</div>
+		
+		<div class="clients-reviews">
+			<h3 style="padding: 25px 0px">What Client's Say?</h3>
+			<div class="clients-reviews-quote">Curabitur quis nisl in leo euismod venenatis eu in diam.
+			Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum</div>
+			<div class="clients-reviews-name">Jhon Doe</div>
+		</div>
+		
+		<div class="happy-clients">
+			<div style="padding-right: 5px"><h3>Our happy clients</h3></div>
+			<div class="clients-line">
+				<i class="fa fa-circle" aria-hidden="true"></i>
+				<hr>
+			</div>
+			<div class="happy-clients-scroller">
+				<div><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+				<div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+			</div>
+			
+			<div class="happy-clients-logos">
+				<div><img src="img/jQuery.png" alt="client1"></div>
+				<div><img src="img/jQuery.png" alt="client2"></div>
+				<div><img src="img/jQuery.png" alt="client3"></div>
+				<div><img src="img/jQuery.png" alt="client4"></div>
+				<div><img src="img/jQuery.png" alt="client5"></div>
+				<div><img src="img/jQuery.png" alt="client6"></div>
+			</div>
+		</div>
+		
+		
+	</div>
 </div>
 
-<footer class="footer">
-    <div class="footer_navigation">
-        About me!
-    </div>
-    <div class="footer_social-networks">
-        Social Networks: ...
+<footer>
+    <div class="footer-back-container-1">
+		<div class="footer-line"></div>
+		<div class="footer-menu">
+			<div class="footer-company">
+				<div class="logo footer-menu-head"><span>Modus</span>Versus</div>
+				<div><p style="line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+				Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p></div>
+				<div><p>Phone:<span>182 2569 5896</span></p><p>e-mail:<span>info@modus.versus</span></p></div>
+			</div>
+			<div class="footer-list">
+				<div class="footer-menu-head"><h4>Company</h4></div>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Testimonials</a></li>
+				</ul>
+			</div>
+			<div class="footer-list">
+				<div class="footer-menu-head"><h4>Community</h4></div>
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Newsletter</a></li>
+				</ul>
+			</div>
+			<div class="footer-blog">
+				<div class="footer-menu-head"><span>from the &nbsp</span>BLOG</div>
+				<div class="footer-blog-content">
+					<div class="footer-blog-icon-background"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+					<span class="footer-blog-date">26 May, 2013<span>
+					</p>
+				</div>
+				<div class="footer-blog-content">
+					<div class="footer-blog-icon-background"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+					<span class="footer-blog-date">26 May, 2013<span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer-back-container-2">
+		<div class="footer-copyright">
+			<div>2013 ModusVersus</div>
+			<div class="footer-social-buttons">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://www.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+			</div>
+		</div>
     </div>
 </footer>
 </body>
