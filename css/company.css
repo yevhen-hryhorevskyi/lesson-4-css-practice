@@ -1,0 +1,292 @@
+.company:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgb(243, 243, 243) 4%, transparent 4%, transparent 20%, rgb(243, 243, 243) 20%, rgb(243, 243, 243) 24%, transparent 24%, transparent 40%, rgb(243, 243, 243) 40%, rgb(243, 243, 243) 44%, transparent 44%, transparent 60%, rgb(243, 243, 243) 60%, rgb(243, 243, 243) 64%, transparent 64%, transparent 80%, rgb(243, 243, 243) 80%, rgb(243, 243, 243) 84%, transparent 84%);
+    background-size: 25px 7px;
+}
+
+.company:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgb(243, 243, 243) 8%, transparent 8%);
+    background-size: 25px 9px;
+}
+
+.company-lead {
+    margin: 0 15px 60px;
+    text-align: center;
+}
+
+.company-lead h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(225, 82, 75);
+    text-transform: uppercase;
+}
+
+.company-pictures {
+    margin: 0 15px 60px;
+    position: relative;
+}
+
+.company-pictures .img-wrap-active {
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 44px 4px 4px;
+    background-color: rgb(193, 199, 200);
+}
+
+.company-pictures .img-wrap-active:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: '\f141';
+    line-height: 24px;
+    font-size: 24px;
+    color: rgb(236, 236, 236);
+    left: 14px;
+    top: 9px;
+}
+
+.company-pictures .img-wrap-active:after {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: '\f068';
+    line-height: 24px;
+    font-size: 24px;
+    color: rgb(236, 236, 236);
+    right: 14px;
+    top: 10px;
+}
+
+.company-pictures .img-wrap {
+    display: none;
+}
+
+.company-pictures img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+.company-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.company-sidebar {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 30px);
+    margin: 0 15px 60px;
+}
+
+.company-sidebar:first-child {
+    order: 2;
+}
+
+.company-sidebar:last-child {
+    order: 3;
+}
+
+.company-statistics {
+    margin-bottom: 30px;
+    order: 1;
+}
+
+.company-statistics-lead {
+    margin: 0 15px;
+}
+
+.company-statistics p:last-of-type {
+    padding-bottom: 60px;
+}
+
+.statistics-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.statistics-overview-wrap {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 30px);
+    position: relative;
+    margin: 0 15px 30px;
+}
+
+.statistics-overview {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.statistics-overview_progress-number {
+    position: absolute;
+    left: 50%;
+    /* Must be the same as progress-bar height. In such case we have number straight below the arc*/
+    top: 60px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgb(127, 140, 140);
+    /*
+        As we have a value which starts straight above the arc's center,
+        then we need to:
+         - move on the half width of the number content = move to 50% left with X axis
+         - move on the full height of the number content = move to 100% top with Y axis
+    */
+    transform: translate(-50%, -100%);
+}
+
+.statistics-overview_progress-label {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    color: rgb(127, 140, 140);
+    text-transform: uppercase;
+}
+
+.statistics-overview_progress-bar {
+    /*  position: hidden;
+
+        Used to make work overflow = hidden.
+        If you remove it, then selectors 'before', 'after' will take all effects from the nearest
+        parent with position relative / fixed and be a part of content for that item.
+
+        As an example in current layout you may comment this property
+        and add to the class 'statistics-overview' above additional style overflow: hidden;
+    */
+    position: relative;
+    height: 60px;
+    width: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.statistics-overview_progress-bar:before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: inherit;
+
+    border-radius: 60px 60px 0 0;
+    border: 20px solid rgb(226, 83, 75);
+    box-sizing: border-box;
+    border-bottom: 0;
+}
+
+.statistics-overview_progress-bar-arc {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+
+    border-radius: 60px 60px 0 0;
+    border: 20px solid rgb(118, 199, 192);
+    box-sizing: border-box;
+    border-bottom: 0;
+
+    /*
+        Moving top left point to the middle of the 'circle'
+        for performing other 'transform' actions
+    */
+    transform-origin: 50% 100%;
+
+    /*
+        In real projects it will be calculated by JS and inserted into 'style' attribute following next rule:
+                var statisticsValue = 0.7;
+                rotationAngel = round(180 * statistics)
+
+                -- where round will round the result of multiplication
+        In current example it was done manually
+    */
+    /*transform: rotate(90deg);*/
+}
+
+@media only screen and (min-width: 768px) {
+    .company-pictures .img-wrap-active {
+        width: 568px;
+        box-shadow: -66px 0 0 -56px rgba(0, 0, 0, 0.2), 66px 0 0 -56px rgba(0, 0, 0, 0.2);
+    }
+
+    .company-pictures .img-wrap {
+        display: block;
+        border-radius: 3px;
+        position: absolute;
+        z-index: 1;
+        width: 368px;
+        top: 50%;
+        margin: 0;
+        padding: 42px 4px 4px;
+        background-color: rgb(176, 184, 185);
+        transform: translate(0, -50%);
+    }
+
+    .company-pictures .img-wrap:first-child {
+        left: 0;
+    }
+
+    .company-pictures .img-wrap:last-child {
+        right: 0;
+    }
+
+    .company-pictures .img-wrap:before {
+        position: absolute;
+        font-family: 'FontAwesome';
+        content: '\f141';
+        line-height: 24px;
+        font-size: 24px;
+        color: rgb(236, 236, 236);
+        left: 14px;
+        top: 9px;
+    }
+
+    .company-pictures .img-wrap:after {
+        position: absolute;
+        font-family: 'FontAwesome';
+        content: '\f068';
+        line-height: 24px;
+        font-size: 24px;
+        color: rgb(236, 236, 236);
+        right: 14px;
+        top: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .company-sidebar {
+        flex-basis: 0;
+    }
+
+    .company-statistics {
+        width: 600px;
+    }
+
+    .company-sidebar:first-child {
+        order: 1;
+    }
+
+    .company-statistics {
+        order: 2;
+    }
+
+    .company-sidebar:last-child {
+        order: 3;
+    }
+}

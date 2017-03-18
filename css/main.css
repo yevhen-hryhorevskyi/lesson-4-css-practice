@@ -1,27 +1,6 @@
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 body {
-    height: 1000px;
+    padding-top: 80px;
+    background-color: rgb(243, 243, 243);
 }
 
 header {
@@ -29,71 +8,56 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
-    background-color: rgba(99, 193, 184, 0.5);
+    height: 80px;
+    background-color: rgb(118, 199, 192);
+    border-bottom: 1px solid rgb(106, 179, 172);
     -webkit-transform: translateZ(0);
     z-index: 999;
 }
 
-.header-fix {
+.slider {
+    padding-bottom: 50px;
+}
+
+.services {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company {
     position: relative;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: rgb(99, 193, 184);
+    padding-top: 70px;
+    background-image: linear-gradient(rgb(236, 236, 236) 400px, transparent 400px);
 }
 
-.content {
-    height: 1000px;
+.company-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Adaptive layouting with flexbox*/
-.company-year-statistics-overview {
+.clients {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_navigation {
+    position: relative;
+    padding-top: 45px;
+    background-color: rgb(118, 199, 192);
+    border-top: 1px solid rgb(145, 210, 205);
+}
+
+.footer_navigation-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    max-width: 580px; /* 560px width from mockup + 10px min margin for first & last child inside*/
-    margin: 40px auto;
-}
-
-/* Adaptive layouting with blocks*/
-/*.company-year-statistics-overview {*/
-    /*width: 100%;*/
-    /*max-width: 580px;*/
-    /*margin: 40px auto;*/
-/*}*/
-
-/*.company-year-statistics-overview:before,*/
-/*.company-year-statistics-overview:after {*/
-    /*content: " ";*/
-    /*display: table;*/
-/*}*/
-
-/*.company-year-statistics-overview:after {*/
-    /*clear: both;*/
-/*}*/
-
-/*.company-year-statistics-overview > .statistics-overview {*/
-    /*float: left;*/
-/*}*/
-
-footer {
-    width: 100%;
-}
-
-.footer_navigation {
-    padding: 35px 0;
-    background-color: rgb(99, 193, 184);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer_social-networks {
-    padding: 10px;
-    background-color: rgb(82, 164, 155);
-}
-
-@media only screen and (max-width: 767px) {
-    /*
-        For mobile layouts
-     */
+    height: 50px;
+    background-color: rgb(106, 179, 172);
+    overflow: hidden;
 }

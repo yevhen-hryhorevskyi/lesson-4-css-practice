@@ -1,0 +1,136 @@
+.services p {
+    line-height: 1.6;
+    padding-bottom: 0;
+}
+
+.services-lead {
+    margin: 0 15px 50px;
+    padding: 25px 0;
+    background-color: rgb(236, 236, 236);
+    border-radius: 3px;
+}
+
+.services-lead main {
+    margin: 0 30px;
+}
+
+.services-lead aside {
+    margin: 20px 30px 0;
+}
+
+.services-lead h2 {
+    line-height: 1;
+}
+
+.services-lead .btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 16px 0 14px;
+    background-color: rgb(232, 100, 90);
+    box-shadow: 0 4px 0 rgb(226, 83, 75);
+}
+
+.services-lead .btn span {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: padding-right .3s;
+}
+
+.services-lead .btn:hover span {
+    padding-right: 25px;
+}
+
+.services-lead .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: opacity .3s, right .3s;
+}
+
+.services-lead .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.service {
+    display: block;
+    position: relative;
+    margin: 0 15px 80px;
+    padding: 50px 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+    box-shadow: 0 4px 0 rgb(229, 230, 230);
+    transition: background-color .3s;
+}
+
+.service:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.service i {
+    line-height: 1;
+    font-size: 60px;
+    margin-bottom: 18px;
+    color: rgb(98, 189, 189);
+    transition: color .3s;
+}
+
+.service:hover i {
+    color: rgb(226, 83, 75);
+}
+
+.service h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(127, 140, 140);
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.service .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+
+.service:hover .btn {
+    background-color: rgb(232, 100, 90);
+    box-shadow: 0 4px 0 rgb(226, 83, 75);
+}
+
+@media only screen and (min-width: 768px) {
+    .services-lead {
+        display: flex;
+    }
+
+    .services-lead aside {
+        margin: 0 30px 0 auto;
+    }
+
+    .services-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .service {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .service {
+        flex-basis: calc(25% - 30px);
+    }
+}
